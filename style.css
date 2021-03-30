@@ -20,6 +20,8 @@ nav ul{
 
 nav li a{ 
     list-style-type: none;
+    text-decoration: none;
+    color: black;
     padding: 25px;
 }
 
@@ -38,3 +40,4 @@ nav li a:hover{
     width: 420px;
     height: 50px;
 }
+
