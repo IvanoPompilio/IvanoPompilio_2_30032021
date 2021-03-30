@@ -1,0 +1,31 @@
+body {
+    width: auto;
+    margin: 15px 50px 50px 50px;
+    font-family: "Raleway",sans-serif;
+    font-size: 16px;
+    line-height: 15px;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul{
+    display: flex;
+    list-style-type: none;
+}
+
+nav li a{ 
+    list-style-type: none;
+    padding: 25px;
+}
+
+nav li a:hover{
+    color: #0065FC;
+    box-sizing: border-box;
+    border-top: 2px #0065FC solid;
+    padding-top: 48px; /* solution un peu bancale... l'éspacement total est maintenant de 48px au lieu de 50 */
+}
