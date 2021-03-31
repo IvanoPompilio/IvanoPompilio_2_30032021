@@ -92,25 +92,56 @@ nav li a:hover{
     margin: 12px;
 }
 
+.criteres {
+    margin-top: 20px;
+}
+
 .filtres {
     display: flex;
     align-items: center;
     margin: 12px;
+    box-sizing: border-box;
     border: 2px #D9D9D9 solid;
-    border-radius: 30px;
+    border-radius: 25PX;
     width: auto;
     height: 50px;
 }
 
-.fas {
-    display: inline-block;
+.filtres .fas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #0065FC;
     background: #DEEBFF;
-    box-sizing: border-box;
     border-radius: 50%;
-    padding: 18px;
-
+    height: 50px;
+    width: 50px;
 }
 
 .filtres p {
     margin: 22px;
+    font-weight: 600;
+    
+}
+
+.info {
+    display: flex;
+    align-items: center;
+}
+
+.info i {
+    font-size: 12px;
+}
+
+.info .fa-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #0065FC;
+    box-sizing: border-box;
+    border: 1px #D9D9D9 solid;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    margin: 10px;  
 }
