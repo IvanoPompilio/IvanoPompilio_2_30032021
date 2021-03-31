@@ -2,7 +2,7 @@ body {
     width: auto;
     margin: 15px 50px 50px 50px;
     font-family: "Raleway",sans-serif;
-    font-weight: 300;
+    font-weight: 350;
     font-size: 16px;
     line-height: 15px;
 }
@@ -52,12 +52,14 @@ nav li a:hover{
     height: 50px;
 }
 
+
 .fa-map-marker-alt {
     padding: 18px;
     background-color: #F2F2F2;
-    box-sizing: border-box;
+    box-sizing: content-box;
     border-radius: 15px;
 }
+
 .spcrch {
     flex: 2;
     background-color: white;
@@ -69,11 +71,46 @@ nav li a:hover{
 }
 
 .btn {
-    align-items: flex-end;
     padding: 18px;
     background-color: #0065FC;
     border-radius: 15px;
-    font-weight: 500;
+    font-weight: 600;
+    letter-spacing: 0.5px;
     color: white;
 
+}
+
+/* END OF search bar*/
+
+.criteres {
+    display: flex;
+    align-items: center;
+}
+
+.t2 {
+    font-weight: 600;
+    margin: 12px;
+}
+
+.filtres {
+    display: flex;
+    align-items: center;
+    margin: 12px;
+    border: 2px #D9D9D9 solid;
+    border-radius: 30px;
+    width: auto;
+    height: 50px;
+}
+
+.fas {
+    display: inline-block;
+    background: #DEEBFF;
+    box-sizing: border-box;
+    border-radius: 50%;
+    padding: 18px;
+
+}
+
+.filtres p {
+    margin: 22px;
 }
