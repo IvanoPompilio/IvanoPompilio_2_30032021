@@ -2,6 +2,7 @@ body {
     width: auto;
     margin: 15px 50px 50px 50px;
     font-family: "Raleway",sans-serif;
+    font-weight: 300;
     font-size: 16px;
     line-height: 15px;
 }
@@ -13,15 +14,18 @@ header{
     align-items: center;
 }
 
+a {
+    list-style-type: none;
+    text-decoration: none;
+    color: black;
+}
+
 nav ul{
     display: flex;
     list-style-type: none;
 }
 
 nav li a{ 
-    list-style-type: none;
-    text-decoration: none;
-    color: black;
     padding: 25px;
 }
 
@@ -32,12 +36,44 @@ nav li a:hover{
     padding-top: 48px; /* solution un peu bancale... l'éspacement total est maintenant de 48px au lieu de 50 */
 }
 
+.inscription {
+    font-weight: bold;
+    color: #0065FC;
+}
+
 /* end of header */
 
-.search{
+.search {
+    display: flex;
+    justify-content:space-between;
     border: 1px #F2F2F2 solid;
     border-radius: 15px;
     width: 420px;
     height: 50px;
 }
 
+.fa-map-marker-alt {
+    padding: 18px;
+    background-color: #F2F2F2;
+    box-sizing: border-box;
+    border-radius: 15px;
+}
+.spcrch {
+    flex: 2;
+    background-color: white;
+    border: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: black;
+    padding: 18px;
+}
+
+.btn {
+    align-items: flex-end;
+    padding: 18px;
+    background-color: #0065FC;
+    border-radius: 15px;
+    font-weight: 500;
+    color: white;
+
+}
