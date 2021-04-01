@@ -20,6 +20,10 @@ a {
     color: black;
 }
 
+a:hover {
+    color: #0065FC;
+}
+
 nav ul{
     display: flex;
     list-style-type: none;
@@ -29,8 +33,7 @@ nav li a{
     padding: 25px;
 }
 
-nav li a:hover{
-    color: #0065FC;
+header nav li a:hover{
     box-sizing: border-box;
     border-top: 2px #0065FC solid;
     padding-top: 48px; /* solution un peu bancale... l'éspacement total est maintenant de 48px au lieu de 50 */
