@@ -148,3 +148,32 @@ header nav li a:hover{
     width: 30px;
     margin: 10px;  
 }
+
+/* end of search zone */
+
+#hebergements {
+    box-sizing: border-box;
+    padding: 45px;
+    width: 880px;
+    height: 625px;
+    background-color:#F2F2F2;
+    border-radius: 15px;
+}
+
+.heberg {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between; /*il ne marche pas!!*/ 
+}
+
+.sqhost {
+    display: block;
+    height: 200px;
+    width: 245px;
+    box-sizing: border-box;
+    border: 5px white solid;
+    border-radius: 15px;
+    background: url(images/hebergements/3_medium/febrian-zakaria-M6S1WvfW68A-unsplash.jpg);
+    margin: 0px 0px 25px 0px;
+}
