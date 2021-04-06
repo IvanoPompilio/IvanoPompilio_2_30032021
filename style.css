@@ -1,17 +1,18 @@
 body {
     width: auto;
-    margin: 15px 50px 50px 50px;
+    height: auto;
     font-family: "Raleway",sans-serif;
     font-weight: 350;
     font-size: 16px;
-    line-height: 15px;
+    
 }
 
 .corp {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    align-content: space-between;
+    align-content: space-around;
+    margin: 15px 50px 50px 50px;
 }
 
 
@@ -164,6 +165,7 @@ header nav li a:hover{
 /* end of search zone */
 
 #hebergements {
+    display: block;
     box-sizing: border-box;
     padding: 45px;
     width: 880px;
@@ -251,11 +253,12 @@ header nav li a:hover{
 /*end of hebergements*/
 
 #populaires {
+    display: block;
     box-sizing: border-box;
     align-content: space-between;
     padding: 45px;
     width: auto;
-    height: 625px;
+    height: auto;
     background-color:#F2F2F2;
     border-radius: 15px;
 }
@@ -310,16 +313,26 @@ header nav li a:hover{
 /*end of Populaires*/
 
 #activites {
+    display: block;
+    width: 100%;
+    height: auto;
+    padding: 45px 0px 45px 0px;
+}
+
+.containeract {
     display: flex;
-    flex-wrap: wrap;
+    flex-flow: row wrap;
     justify-content:space-between;
-    align-items: space-between;
+    align-content: space-between;
 }
 
 .activ {
+    display: block;
+    box-sizing: border-box;
     position: relative;
     border-radius: 15px;
     box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.05);
+    margin-bottom: 40px;
 }
 
 .activ.act1{
@@ -382,13 +395,30 @@ header nav li a:hover{
 
 /*end of activités*/
 
-footer{
+footer {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    width: auto;
+    height: auto;
+    background-color: #F2F2F2;
+    padding: 45px 50px 45px 50px;
 }
 
 .foot {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
+    display: block;
+    width: 33.33%;
+    
 }
+
+.foot ul {
+    list-style-type: none;
+    text-align: left;
+}
+
+/*notes:
+
+mettre les shadows aux cartes + un effet en hover (zoom+color gris 10%)
+H2 menu no style
+Space bottom section = 0
+
+*/
