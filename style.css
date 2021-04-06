@@ -4,6 +4,7 @@ body {
     font-family: "Raleway",sans-serif;
     font-weight: 350;
     font-size: 16px;
+    margin: 0;
     
 }
 
@@ -15,17 +16,12 @@ body {
     margin: 15px 50px 50px 50px;
 }
 
-
-header{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-}
-
-
 h3 {
     font-size: 16px;
+}
+
+h4{
+    font-size: 18px;
 }
 
 a {
@@ -36,6 +32,16 @@ a {
 
 a:hover {
     color: #0065FC;
+}
+
+/* header beginning*/
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 50px 0px 50px;
 }
 
 nav ul{
@@ -50,12 +56,18 @@ nav li a{
 header nav li a:hover{
     box-sizing: border-box;
     border-top: 2px #0065FC solid;
-    padding-top: 48px;
+    padding-top: 50px;
+}
+
+nav li h2 a{
+    text-decoration: none;
+    font-size: 16px;
 }
 
 .inscription {
     font-weight: bold;
     color: #0065FC;
+
 }
 
 /* end of header */
@@ -94,7 +106,13 @@ header nav li a:hover{
     font-weight: 600;
     letter-spacing: 0.5px;
     color: white;
+    transition: 0.5s;
+}
 
+.btn:hover{
+    background-color: #0058dd;
+    color: white;
+    transition: 0.5s;
 }
 
 /* END OF search bar*/
@@ -126,6 +144,7 @@ header nav li a:hover{
 
 .filtres .fas {
     display: flex;
+    position: left;
     justify-content: center;
     align-items: center;
     color: #0065FC;
@@ -133,7 +152,15 @@ header nav li a:hover{
     border-radius: 50%;
     height: 50px;
     width: 50px;
+    transition: 0.5s;
 }
+
+.filtres .fas:hover {
+    box-shadow: 0px 0px 14px rgba(0, 102, 255, 0.644);
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+}
+
 
 .filtres p {
     margin: 22px;
@@ -188,6 +215,15 @@ header nav li a:hover{
     border: 5px white solid;
     border-radius: 15px;
     margin: 0px 0px 30px 0px;
+    box-shadow: 0px 0px 14px rgba(0, 0, 0, 0.219);
+    transition: 0.5s;
+}
+
+.sqhost:hover {
+    color:#0065FC;
+    box-shadow: 0px 0px 15px rgba(0, 102, 255, 0.397);
+    transition: 0.5s;
+    cursor: pointer;
 }
 
 .sq {
@@ -214,6 +250,7 @@ header nav li a:hover{
     font-size: 12px;
     color: #0065FC;
 }
+
 
 .sqhost.heb1 {
     position: relative;
@@ -272,6 +309,15 @@ header nav li a:hover{
     border: 5px white solid;
     border-radius: 15px;
     margin-bottom: 30px;
+    box-shadow: 0px 0px 14px rgba(0, 0, 0, 0.219);
+    transition: 0.5s;
+}
+
+.hosting:hover{
+    color:#0065FC;
+    box-shadow: 0px 0px 15px rgba(0, 102, 255, 0.397);
+    transition: 0.5s;
+    cursor: pointer;
 }
 
 .recthost {
@@ -316,14 +362,14 @@ header nav li a:hover{
     display: block;
     width: 100%;
     height: auto;
-    padding: 45px 0px 45px 0px;
+    padding: 45px 0px 0px 0px;
 }
 
 .containeract {
     display: flex;
-    flex-flow: row wrap;
+    flex-direction: row;
+    flex-wrap: wrap;
     justify-content:space-between;
-    align-content: space-between;
 }
 
 .activ {
@@ -331,8 +377,16 @@ header nav li a:hover{
     box-sizing: border-box;
     position: relative;
     border-radius: 15px;
-    box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.05);
+    box-shadow: 0px 0px 14px rgba(0, 0, 0, 0.219);
     margin-bottom: 40px;
+    transition: 0.5s;
+}
+
+.activ:hover{
+    color:#0065FC;
+    box-shadow: 0px 0px 15px rgba(0, 102, 255, 0.397);
+    transition: 0.5s;
+    cursor: pointer;
 }
 
 .activ.act1{
@@ -355,7 +409,7 @@ header nav li a:hover{
     background-size: cover;
     background-position: center;
     width: 300px;
-    height: 240px;
+    height: 170px;
 }
 
 .activ.act4{
@@ -370,7 +424,7 @@ header nav li a:hover{
     background-size: cover;
     background-position: center;
     width: 300px;
-    height: 240px;
+    height: 170px;
 }
 
 .activ.act6{
@@ -388,16 +442,16 @@ header nav li a:hover{
     background-color: white;
     width: 100%;
     height: 60px;
-    padding: 5px;
-    font-weight: bold;
+    padding: 5px 5px 5px 20px;
     border-radius: 0px 0px 15px 15px;
 }
+
 
 /*end of activités*/
 
 footer {
     display: flex;
-    justify-content: space-between;
+    flex-direction: row;
     width: auto;
     height: auto;
     background-color: #F2F2F2;
@@ -407,18 +461,22 @@ footer {
 .foot {
     display: block;
     width: 33.33%;
+    text-align: left;
     
 }
 
-.foot ul {
-    list-style-type: none;
-    text-align: left;
+.foot ul{
+    display: block;
+    padding-left: 0;
 }
+
+.foot ul li{
+    list-style-type: none;
+    padding-bottom: 20px;
+}
+
 
 /*notes:
 
-mettre les shadows aux cartes + un effet en hover (zoom+color gris 10%)
-H2 menu no style
-Space bottom section = 0
 
 */
