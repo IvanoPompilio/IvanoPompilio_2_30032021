@@ -10,6 +10,8 @@ body {
 .corp {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
 }
 
 
@@ -266,6 +268,7 @@ header nav li a:hover{
     width: 345px;
     border: 5px white solid;
     border-radius: 15px;
+    margin-bottom: 30px;
 }
 
 .recthost {
@@ -275,13 +278,20 @@ header nav li a:hover{
     box-sizing: border-box;
     width: 210px;
     height: 100%;
-    padding: 5px;
-    line-height: 5px;
+    padding: 5px 18px 5px 18px;
+    font-size: 14px;
+
+}
+
+.recthost i {
+        font-size: 12px;
+        color: #0065FC;
+        margin-top: 15px;
 }
 
 .hosting.ho1 {
     background-image: url(/images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg);
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
 }
 
@@ -297,32 +307,88 @@ header nav li a:hover{
     background-repeat: no-repeat;
 }
 
-
-
-/*activités en stand-by
+/*end of Populaires*/
 
 #activites {
     display: flex;
     flex-wrap: wrap;
     justify-content:space-between;
+    align-items: space-between;
 }
 
-.act1{
-    position:relative;
-    background-image: url(/images/activites/3_medium/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg);
+.activ {
+    position: relative;
+    border-radius: 15px;
+    box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.05);
+}
+
+.activ.act1{
+    background-image: url(/images/activites/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg);
     background-size: cover;
-    width: 420px;
-    height: 625px;
+    width: 300px;
+    height: 450px;
+}
+
+.activ.act2{
+    background-image: url(/images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 300px;
+    height: 240px;
+}
+
+.activ.act3{
+    background-image: url(/images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 300px;
+    height: 240px;
+}
+
+.activ.act4{
+    background-image: url(/images/activites/3_medium/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg);
+    background-size: cover;
+    width: 300px;
+    height: 450px;
+}
+
+.activ.act5{
+    background-image: url(/images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 300px;
+    height: 240px;
+}
+
+.activ.act6{
+    background-image: url(/images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 300px;
+    height: 240px;
 }
 
 #activites div figcaption {
+    box-sizing: border-box;
     position: absolute;
     bottom: 0;
     background-color: white;
     width: 100%;
-    height: 80px;
-    padding: 10px;
+    height: 60px;
+    padding: 5px;
     font-weight: bold;
+    border-radius: 0px 0px 15px 15px;
 }
 
-*/
+/*end of activités*/
+
+footer{
+    display: flex;
+    justify-content: space-around;
+}
+
+.foot {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
