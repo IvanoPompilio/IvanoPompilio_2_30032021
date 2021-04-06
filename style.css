@@ -64,6 +64,8 @@ nav li h2 a{
     font-size: 16px;
 }
 
+
+
 .inscription {
     font-weight: bold;
     color: #0065FC;
@@ -119,6 +121,7 @@ nav li h2 a{
 
 .criteres {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
 }
 
@@ -132,7 +135,7 @@ nav li h2 a{
 }
 
 .filtres {
-    display: flex;
+    display: flex;;
     align-items: center;
     margin: 12px;
     box-sizing: border-box;
@@ -194,11 +197,12 @@ nav li h2 a{
 #hebergements {
     display: block;
     box-sizing: border-box;
-    padding: 45px;
+    padding: 45px 40px 0px 45px;
     width: 880px;
     height: auto;
     background-color:#F2F2F2;
     border-radius: 15px;
+    scroll-behavior: smooth;
 }
 
 .heberg {
@@ -256,34 +260,40 @@ nav li h2 a{
     position: relative;
     background-image: url(/images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg);
     background-size: cover;
+    background-position: bottom;
     background-repeat: no-repeat;
 }
 
 .sqhost.heb2 {
     background-image: url(/images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg);
     background-size: cover;
+    background-position: bottom;
     background-repeat: no-repeat;
 }
 .sqhost.heb3 {
     background-image: url(/images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg);
     background-size: cover;
+    background-position: bottom;
     background-repeat: no-repeat;
 }
 
 .sqhost.heb4 {
     background-image: url(/images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg);
     background-size: cover;
+    background-position: bottom;
     background-repeat: no-repeat;
 }
 .sqhost.heb5 {
     background-image: url(/images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg);
     background-size: cover;
+    background-position: bottom;
     background-repeat: no-repeat;
 }
 
 .sqhost.heb6 {
     background-image: url(/images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg);
     background-size: cover;
+    background-position: bottom;
     background-repeat: no-repeat;
 }
 
@@ -300,6 +310,10 @@ nav li h2 a{
     border-radius: 15px;
 }
 
+#populaires h2{
+    display: flex;
+    justify-content: space-between;
+}
 
 .hosting {
     position: relative;
@@ -340,7 +354,7 @@ nav li h2 a{
 
 .hosting.ho1 {
     background-image: url(/images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg);
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
 }
 
