@@ -47,7 +47,7 @@ nav li a{
 header nav li a:hover{
     box-sizing: border-box;
     border-top: 2px #0065FC solid;
-    padding-top: 48px; /* solution un peu bancale... l'éspacement total est maintenant de 48px au lieu de 50 */
+    padding-top: 48px;
 }
 
 .inscription {
@@ -135,7 +135,6 @@ header nav li a:hover{
 .filtres p {
     margin: 22px;
     font-weight: 600;
-    
 }
 
 .info {
@@ -251,13 +250,54 @@ header nav li a:hover{
 
 #populaires {
     box-sizing: border-box;
+    align-content: space-between;
     padding: 45px;
-    width: 420px;
+    width: auto;
     height: 625px;
     background-color:#F2F2F2;
     border-radius: 15px;
-    margin-left: 40px;
 }
+
+
+.hosting {
+    position: relative;
+    box-sizing: border-box;
+    height: 145px;
+    width: 345px;
+    border: 5px white solid;
+    border-radius: 15px;
+}
+
+.recthost {
+    position: absolute;
+    right: 0;
+    background-color: white;
+    box-sizing: border-box;
+    width: 210px;
+    height: 100%;
+    padding: 5px;
+    line-height: 5px;
+}
+
+.hosting.ho1 {
+    background-image: url(/images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.hosting.ho2 {
+    background-image: url(/images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.hosting.ho3 {
+    background-image: url(/images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+
 
 /*activités en stand-by
 
