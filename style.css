@@ -489,8 +489,15 @@ footer {
     padding-bottom: 20px;
 }
 
+/* end of desktop version*/
 
-/*notes:
+@media (max-width: 1024px) {
+
+.criteres {
+    justify-content: space-between;
+}
 
 
-*/
+
+
+}
