@@ -208,7 +208,7 @@ nav li h2 a{
     display: block;
     box-sizing: border-box;
     padding: 45px 40px 45px 40px;
-    width: 66.66%;
+    width: 880px;
     height: auto;
     background-color:#F2F2F2;
     border-radius: 15px;
@@ -217,15 +217,21 @@ nav li h2 a{
 
 .heberg {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.column1 {
+    display: flex;
+    flex-direction: row;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .sqhost {
     position: relative;
     box-sizing: border-box;
     height: 200px;
-    width: 240px;
+    width: 250px;
     border: 5px white solid;
     border-radius: 15px;
     margin: 0px 0px 30px 0px;
@@ -233,11 +239,10 @@ nav li h2 a{
     transition: 0.5s;
 }
 
-.sqhost:hover {
-    color:#0065FC;
-    box-shadow: 0px 0px 15px rgba(0, 102, 255, 0.397);
-    transition: 0.5s;
-    cursor: pointer;
+.sqhost img {
+    height: 130px;
+    width: 100%;
+    object-fit: cover;
 }
 
 .sq {
@@ -252,15 +257,22 @@ nav li h2 a{
     line-height: 5px;
 }
 
+.sqhost:hover {
+    color:#0065FC;
+    box-shadow: 0px 0px 15px rgba(0, 102, 255, 0.397);
+    transition: 0.5s;
+    cursor: pointer;
+}
+
 #hebergements a {
     font-weight: bold !important;
     margin-top: 20px  !important;
 }
-.sqhost p {
+.sq p {
     font-size: 14px;
 }
 
-.sqhost i {
+.sq i {
     font-size: 12px;
     color: #0065FC;
 }
@@ -272,9 +284,8 @@ nav li h2 a{
     box-sizing: border-box;
     align-content: space-between;
     padding: 45px;
-    width: auto;
+    width: 425px;
     height: auto;
-    margin: auto;
     background-color:#F2F2F2;
     border-radius: 15px;
 }
@@ -284,6 +295,10 @@ nav li h2 a{
     justify-content: space-between;
 }
 
+.hostingsup {
+    display: flex;
+    flex-wrap: wrap;
+}
 
 .hosting {
     position: relative;
@@ -297,6 +312,12 @@ nav li h2 a{
     transition: 0.5s;
 }
 
+.hosting img {
+    height: 100%;
+    width: 120px;
+    object-fit: cover;
+}
+
 .hosting:hover{
     color:#0065FC;
     box-shadow: 0px 0px 15px rgba(0, 102, 255, 0.397);
@@ -307,6 +328,7 @@ nav li h2 a{
 .recthost {
     position: absolute;
     right: 0;
+    top: 0;
     background-color: white;
     box-sizing: border-box;
     width: 210px;
@@ -320,24 +342,6 @@ nav li h2 a{
         font-size: 12px;
         color: #0065FC;
         margin-top: 15px;
-}
-
-.hosting.ho1 {
-    background-image: url(/images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg);
-    background-size: contain;
-    background-repeat: no-repeat;
-}
-
-.hosting.ho2 {
-    background-image: url(/images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg);
-    background-size: contain;
-    background-repeat: no-repeat;
-}
-
-.hosting.ho3 {
-    background-image: url(/images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg);
-    background-size: contain;
-    background-repeat: no-repeat;
 }
 
 /*end of Populaires*/
@@ -358,11 +362,9 @@ nav li h2 a{
 
 .activ {
     display: block;
-    box-sizing: border-box;
     position: relative;
     border-radius: 15px;
     box-shadow: 0px 0px 14px rgba(0, 0, 0, 0.219);
-    margin-bottom: 40px;
     transition: 0.5s;
 }
 
@@ -374,55 +376,43 @@ nav li h2 a{
 }
 
 .activ.act1{
-    background-image: url(/images/activites/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg);
-    background-size: cover;
+    object-fit: cover;
     width: 300px;
     height: 450px;
 }
 
 .activ.act2{
-    background-image: url(/images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg);
-    background-size: cover;
-    background-position: center;
+    object-fit: cover;
     width: 300px;
     height: 240px;
 }
 
 .activ.act3{
-    background-image: url(/images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg);
-    background-size: cover;
-    background-position: center;
+    object-fit: cover;
     width: 300px;
     height: 170px;
 }
 
 .activ.act4{
-    background-image: url(/images/activites/3_medium/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg);
-    background-size: cover;
+    object-fit: cover;
     width: 300px;
     height: 450px;
 }
 
 .activ.act5{
-    background-image: url(/images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg);
-    background-size: cover;
-    background-position: center;
+    object-fit: cover;
     width: 300px;
     height: 170px;
 }
 
 .activ.act6{
-    background-image: url(/images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg);
-    background-size: cover;
-    background-position: center;
+    object-fit: cover;
     width: 300px;
     height: 240px;
 }
 
-#activites div figcaption {
+figcaption {
     box-sizing: border-box;
-    position: absolute;
-    bottom: 0;
     background-color: white;
     width: 100%;
     height: 60px;
