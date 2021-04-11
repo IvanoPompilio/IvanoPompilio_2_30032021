@@ -5,7 +5,6 @@ body {
     font-weight: 350;
     font-size: 16px;
     margin: 0;
-    
 }
 
 .corp {
@@ -44,13 +43,23 @@ header{
     margin: 10px 50px 0px 50px;
 }
 
+nav {
+    display: flex;
+    align-items: baseline;
+}
+
+
 nav ul{
     display: flex;
     list-style-type: none;
 }
 
-nav li a{ 
+nav li a, .inscription{ 
     padding: 25px;
+}
+
+.inscription {
+    font-size: 16px;
 }
 
 header nav li a:hover{
@@ -147,7 +156,8 @@ nav li h2 a{
 
 .filtres .fas {
     display: flex;
-    position: left;
+    position: relative;
+    left: -2px;
     justify-content: center;
     align-items: center;
     color: #0065FC;
@@ -197,8 +207,8 @@ nav li h2 a{
 #hebergements {
     display: block;
     box-sizing: border-box;
-    padding: 45px 40px 0px 45px;
-    width: 880px;
+    padding: 45px 40px 45px 40px;
+    width: 66.66%;
     height: auto;
     background-color:#F2F2F2;
     border-radius: 15px;
@@ -255,48 +265,6 @@ nav li h2 a{
     color: #0065FC;
 }
 
-
-.sqhost.heb1 {
-    position: relative;
-    background-image: url(/images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg);
-    background-size: cover;
-    background-position: bottom;
-    background-repeat: no-repeat;
-}
-
-.sqhost.heb2 {
-    background-image: url(/images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg);
-    background-size: cover;
-    background-position: bottom;
-    background-repeat: no-repeat;
-}
-.sqhost.heb3 {
-    background-image: url(/images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg);
-    background-size: cover;
-    background-position: bottom;
-    background-repeat: no-repeat;
-}
-
-.sqhost.heb4 {
-    background-image: url(/images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg);
-    background-size: cover;
-    background-position: bottom;
-    background-repeat: no-repeat;
-}
-.sqhost.heb5 {
-    background-image: url(/images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg);
-    background-size: cover;
-    background-position: bottom;
-    background-repeat: no-repeat;
-}
-
-.sqhost.heb6 {
-    background-image: url(/images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg);
-    background-size: cover;
-    background-position: bottom;
-    background-repeat: no-repeat;
-}
-
 /*end of hebergements*/
 
 #populaires {
@@ -306,6 +274,7 @@ nav li h2 a{
     padding: 45px;
     width: auto;
     height: auto;
+    margin: auto;
     background-color:#F2F2F2;
     border-radius: 15px;
 }
@@ -314,6 +283,7 @@ nav li h2 a{
     display: flex;
     justify-content: space-between;
 }
+
 
 .hosting {
     position: relative;
@@ -493,11 +463,43 @@ footer {
 
 @media (max-width: 1024px) {
 
-.criteres {
-    justify-content: space-between;
+nav {
+    display: block;
 }
 
 
 
+.search {
+    margin: 20px auto;
+}
+
+.criteres {
+    justify-content: space-around;
+}
+
+#hebergements {
+    width: 100%;
+}
+
+#populaires {
+    width: 100%;
+    margin-top: 50px;
+}
+
+.hostingsup {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+
+footer {
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.foot { 
+    width: auto!important;
+}
 
 }
