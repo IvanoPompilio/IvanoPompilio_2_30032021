@@ -209,6 +209,7 @@ nav li h2 a{
     justify-content: space-between;
     flex-wrap: wrap;
     align-content: space-between; /*doesn't work*/
+    width: auto;
 }
 
 #hebergements {
@@ -219,7 +220,6 @@ nav li h2 a{
     height: auto;
     background-color:#F2F2F2;
     border-radius: 15px;
-    margin-right: 1%;
 }
 
 .heberg {
@@ -299,35 +299,33 @@ nav li h2 a{
     display: block;
     box-sizing: border-box;
     padding: 45px;
-    flex: 33%;
+    flex: 28%;
     height: auto;
     background-color:#F2F2F2;
     border-radius: 15px;
     padding: 40px 25px 40px 25px;
-    margin-left: 1%;
 }
 
 #populaires h2{
     display: flex;
     justify-content: space-between;
-    margin: 15px 20px;
+    margin: 15px 35px;
 }
 
 .hostingsup {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    margin: 0;
+    justify-content: space-around;
 }
 
 .hosting {
     position: relative;
     box-sizing: border-box;
     height: 145px;
-    min-width: 345px;
+    min-width: 340px;
     border: 5px white solid;
     border-radius: 15px;
-    margin: 15px;
+    margin: 15px 0px;
     box-shadow: 0px 0px 14px rgba(0, 0, 0, 0.219);
     transition: 0.5s;
 }
@@ -388,17 +386,27 @@ nav li h2 a{
 
 
 .activ{
-    border-radius: 15px 15px 0px 0px;
+    border-radius: 15px;
 }
 
 .column2 div {
+    position: relative;
     border-radius: 15px;
+    margin-bottom: 40px;
     box-shadow: 0px 0px 14px rgba(0, 0, 0, 0.219);
     transition: 0.5s;
 }
 
 .column2 div figcaption {
     padding: 5px;
+    position: absolute;
+    bottom: 0;
+    box-sizing: border-box;
+    background-color: white;
+    width: 100%;
+    height: 60px;
+    padding: 5px 5px 5px 20px;
+    border-radius: 0px 0px 15px 15px;
 }
 
 .column2 div:hover{
@@ -444,39 +452,6 @@ nav li h2 a{
     height: 240px;
 }
 
-
-/*test figcaption
-.actdes {
-    position: absolute;
-    bottom: 0;
-    box-sizing: border-box;
-    background-color: white;
-    width: 100%;
-    height: 60px;
-    padding: 5px 5px 5px 20px;
-    border-radius: 0px 0px 15px 15px;
-}
-
-
-
-.column2 div {
-    position: relative;
-}
-
-.column2 div figcaption {
-    position: absolute;
-    bottom: 1;
-    box-sizing: border-box;
-    background-color: white;
-    width: 100%;
-    height: 60px;
-    padding: 5px 5px 5px 20px;
-    border-radius: 0px 0px 15px 15px;
-}
-
-*/
-
-
 /*end of activités*/
 
 footer {
@@ -507,11 +482,7 @@ footer {
 
 /* end of desktop version*/
 
-@media (max-width: 1024px) {
-
-    .search {
-        margin: 20px auto;
-    }
+@media (max-width: 1400px) {
 
     .criteres {
         justify-content: space-around;
@@ -519,18 +490,13 @@ footer {
 
     #hebergements {
         width: 100%;
+        flex-wrap: wrap;
     }
+    
 
     #populaires {
         width: 100%;
         margin-top: 50px;
-    }
-
-    .hostingsup {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
-
     }
 
     footer {
@@ -544,14 +510,11 @@ footer {
 
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
     
-    .corp{
-        margin: 0;
-    }
-
-    nav ul{
-        order: 2;
+    .column1 {
+        justify-content: space-around;
+        flex-wrap: wrap;
     }
 
 }
