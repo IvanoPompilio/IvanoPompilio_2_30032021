@@ -2,7 +2,7 @@ body {
     width: auto;
     height: auto;
     font-family: "Raleway",sans-serif;
-    font-weight: 350;
+    font-weight: 300;
     font-size: 16px;
     margin: 0;
 }
@@ -11,7 +11,6 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    align-content: space-around;
     margin: 15px 50px 50px 50px;
 }
 
@@ -37,6 +36,7 @@ a:hover {
 
 header{
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
@@ -56,6 +56,7 @@ nav ul{
 
 nav li a, .inscription{ 
     padding: 25px;
+    font-weight: 300;
 }
 
 .inscription {
@@ -87,7 +88,7 @@ nav li h2 a{
     display: flex;
     justify-content:space-between;
     border: 1px #F2F2F2 solid;
-    border-radius: 15px;
+    border-radius: 25px;
     width: 420px;
     height: 50px;
 }
@@ -97,7 +98,7 @@ nav li h2 a{
     padding: 18px;
     background-color: #F2F2F2;
     box-sizing: content-box;
-    border-radius: 15px;
+    border-radius: 15px 0px 0px 15px;
 }
 
 .spcrch {
@@ -113,7 +114,7 @@ nav li h2 a{
 .btn {
     padding: 18px;
     background-color: #0065FC;
-    border-radius: 15px;
+    border-radius: 0px 15px 15px 0px;
     font-weight: 600;
     letter-spacing: 0.5px;
     color: white;
@@ -121,7 +122,7 @@ nav li h2 a{
 }
 
 .btn:hover{
-    background-color: #0058dd;
+    background-color: #0045ac;
     color: white;
     transition: 0.5s;
 }
@@ -149,7 +150,7 @@ nav li h2 a{
     margin: 12px;
     box-sizing: border-box;
     border: 2px #D9D9D9 solid;
-    border-radius: 25PX;
+    border-radius: 30px;
     width: auto;
     height: 50px;
 }
@@ -198,43 +199,52 @@ nav li h2 a{
     border: 1px #D9D9D9 solid;
     border-radius: 50%;
     height: 30px;
-    width: 30px;
-    margin: 10px;  
+    width: 30px;  
 }
 
 /* end of search zone */
 
+.hotels {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-content: space-between; /*doesn't work*/
+}
+
 #hebergements {
     display: block;
     box-sizing: border-box;
-    padding: 45px 40px 45px 40px;
-    width: 880px;
+    padding: 40px 30px 40px 30px;
+    flex: 65%;
     height: auto;
     background-color:#F2F2F2;
     border-radius: 15px;
-    scroll-behavior: smooth;
+    margin-right: 1%;
 }
 
 .heberg {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
 }
 
 .column1 {
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
-    flex-wrap: wrap;
 }
 
 .sqhost {
+    display: flex;
+    justify-content: space-between;
     position: relative;
     box-sizing: border-box;
     height: 200px;
-    width: 250px;
+    flex: 33%;
+    max-width: 300px;
+    min-width: 250px;
     border: 5px white solid;
     border-radius: 15px;
-    margin: 0px 0px 30px 0px;
+    margin: 15px;
     box-shadow: 0px 0px 14px rgba(0, 0, 0, 0.219);
     transition: 0.5s;
 }
@@ -243,6 +253,7 @@ nav li h2 a{
     height: 130px;
     width: 100%;
     object-fit: cover;
+    border-radius: 13px 13px 0;
 }
 
 .sq {
@@ -257,17 +268,6 @@ nav li h2 a{
     line-height: 5px;
 }
 
-.sqhost:hover {
-    color:#0065FC;
-    box-shadow: 0px 0px 15px rgba(0, 102, 255, 0.397);
-    transition: 0.5s;
-    cursor: pointer;
-}
-
-#hebergements a {
-    font-weight: bold !important;
-    margin-top: 20px  !important;
-}
 .sq p {
     font-size: 14px;
 }
@@ -277,45 +277,66 @@ nav li h2 a{
     color: #0065FC;
 }
 
+.sqhost:hover {
+    color:#0065FC;
+    box-shadow: 0px 0px 15px rgba(0, 102, 255, 0.397);
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+#hebergements a {
+    display: block;
+    font-weight: bold !important;
+    margin: 15px  !important;
+}
+
+#hebergements h2 {
+    margin: 15px;
+}
 /*end of hebergements*/
 
 #populaires {
     display: block;
     box-sizing: border-box;
-    align-content: space-between;
     padding: 45px;
-    width: 425px;
+    flex: 33%;
     height: auto;
     background-color:#F2F2F2;
     border-radius: 15px;
+    padding: 40px 25px 40px 25px;
+    margin-left: 1%;
 }
 
 #populaires h2{
     display: flex;
     justify-content: space-between;
+    margin: 15px 20px;
 }
 
 .hostingsup {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    margin: 0;
 }
 
 .hosting {
     position: relative;
     box-sizing: border-box;
     height: 145px;
-    width: 345px;
+    min-width: 345px;
     border: 5px white solid;
     border-radius: 15px;
-    margin-bottom: 30px;
+    margin: 15px;
     box-shadow: 0px 0px 14px rgba(0, 0, 0, 0.219);
     transition: 0.5s;
 }
 
 .hosting img {
     height: 100%;
-    width: 120px;
+    width: 130px;
     object-fit: cover;
+    border-radius: 13px 0px 0px 13px;
 }
 
 .hosting:hover{
@@ -347,28 +368,40 @@ nav li h2 a{
 /*end of Populaires*/
 
 #activites {
-    display: block;
-    width: 100%;
     height: auto;
     padding: 45px 0px 0px 0px;
+    margin: 1%;
 }
 
 .containeract {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content:space-between;
+    justify-content: space-between;
 }
 
-.activ {
-    display: block;
+.column2 {
     position: relative;
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 20px;
+    border-radius: 15px;
+}
+
+
+.activ{
+    border-radius: 15px 15px 0px 0px;
+}
+
+.column2 div {
     border-radius: 15px;
     box-shadow: 0px 0px 14px rgba(0, 0, 0, 0.219);
     transition: 0.5s;
 }
 
-.activ:hover{
+.column2 div figcaption {
+    padding: 5px;
+}
+
+.column2 div:hover{
     color:#0065FC;
     box-shadow: 0px 0px 15px rgba(0, 102, 255, 0.397);
     transition: 0.5s;
@@ -377,41 +410,45 @@ nav li h2 a{
 
 .activ.act1{
     object-fit: cover;
-    width: 300px;
+    width: 100%;
     height: 450px;
 }
 
 .activ.act2{
     object-fit: cover;
-    width: 300px;
+    width: 100%;
     height: 240px;
 }
 
 .activ.act3{
     object-fit: cover;
-    width: 300px;
+    width: 100%;
     height: 170px;
 }
 
 .activ.act4{
     object-fit: cover;
-    width: 300px;
+    width: 100%;
     height: 450px;
 }
 
 .activ.act5{
     object-fit: cover;
-    width: 300px;
+    width: 100%;
     height: 170px;
 }
 
-.activ.act6{
+.activ.act6 {
     object-fit: cover;
-    width: 300px;
+    width: 100%;
     height: 240px;
 }
 
-figcaption {
+
+/*test figcaption
+.actdes {
+    position: absolute;
+    bottom: 0;
     box-sizing: border-box;
     background-color: white;
     width: 100%;
@@ -419,6 +456,25 @@ figcaption {
     padding: 5px 5px 5px 20px;
     border-radius: 0px 0px 15px 15px;
 }
+
+
+
+.column2 div {
+    position: relative;
+}
+
+.column2 div figcaption {
+    position: absolute;
+    bottom: 1;
+    box-sizing: border-box;
+    background-color: white;
+    width: 100%;
+    height: 60px;
+    padding: 5px 5px 5px 20px;
+    border-radius: 0px 0px 15px 15px;
+}
+
+*/
 
 
 /*end of activités*/
@@ -453,43 +509,49 @@ footer {
 
 @media (max-width: 1024px) {
 
-nav {
-    display: block;
+    .search {
+        margin: 20px auto;
+    }
+
+    .criteres {
+        justify-content: space-around;
+    }
+
+    #hebergements {
+        width: 100%;
+    }
+
+    #populaires {
+        width: 100%;
+        margin-top: 50px;
+    }
+
+    .hostingsup {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+
+    }
+
+    footer {
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+
+    .foot { 
+        width: auto!important;
 }
 
-
-
-.search {
-    margin: 20px auto;
 }
 
-.criteres {
-    justify-content: space-around;
-}
+@media screen and (max-width: 600px) {
+    
+    .corp{
+        margin: 0;
+    }
 
-#hebergements {
-    width: 100%;
-}
-
-#populaires {
-    width: 100%;
-    margin-top: 50px;
-}
-
-.hostingsup {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-
-}
-
-footer {
-    justify-content: space-around;
-    flex-wrap: wrap;
-}
-
-.foot { 
-    width: auto!important;
-}
+    nav ul{
+        order: 2;
+    }
 
 }
