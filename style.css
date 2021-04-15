@@ -41,12 +41,10 @@ a:hover {
     color: #0065FC;
 }
 
-/* header beginning*/
+/*---------------------------- header beginning ----------------------------*/
 
 header{
     display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
     justify-content: space-between;
     align-items: center;
     margin: 10px 50px 0px 50px;
@@ -89,7 +87,7 @@ nav li h2 a{
 
 }
 
-/* end of header */
+/*---------------------------- end of header ----------------------------*/
 
 .soustitre h2, .soustitre p {
     margin: 10px;
@@ -139,7 +137,10 @@ nav li h2 a{
     transition: 0.5s;
 }
 
-/* END OF search bar*/
+.btn i{
+    font-style: normal;
+}
+/*---------------------------- END OF search bar ----------------------------*/
 
 .criteres {
     display: flex;
@@ -215,7 +216,7 @@ nav li h2 a{
     margin: 10px;
 }
 
-/* end of search zone */
+/*---------------------------- end of search zone ----------------------------*/
 
 .hotels {
     display: flex;
@@ -304,7 +305,7 @@ nav li h2 a{
 #hebergements h2 {
     margin: 10px 15px;
 }
-/*end of hebergements*/
+/*---------------------------- end of hebergements ----------------------------*/
 
 #populaires {
     display: block;
@@ -374,7 +375,7 @@ nav li h2 a{
         margin-top: 15px;
 }
 
-/*end of Populaires*/
+/*---------------------------- end of Populaires ----------------------------*/
 
 #activites {
     height: auto;
@@ -460,7 +461,7 @@ nav li h2 a{
     height: 240px;
 }
 
-/*end of activités*/
+/*---------------------------- end of activités ----------------------------*/
 
 footer {
     display: flex;
@@ -487,7 +488,7 @@ footer {
     padding-bottom: 20px;
 }
 
-/* end of desktop version*/
+/*---------------------------- end of desktop version ----------------------------*/
 
 @media (max-width: 1400px) {
 
@@ -522,6 +523,8 @@ footer {
 
 }
 
+/*---------------------------- End of small desktop ----------------------------*/
+
 @media screen and (min-width: 667px) and (max-width: 768px) {
     
     .heberg {
@@ -543,4 +546,45 @@ footer {
     }
     
 
+}
+
+/*---------------------------- End of ipad and iphone in landscape orientation ----------------------------*/
+
+@media screen and (max-width: 666px) {
+
+    .corp {
+        margin: 0;
+    }
+
+    #recherche {
+        margin: 0px 18px;
+    }
+
+    .btn::before {
+        font-family: "Font Awesome 5 Free";
+        content: "\f002";
+        display: inline-block;
+    }
+    
+    .btn i {
+        display: none;
+    }
+
+    .search {
+        width: 100%;
+    }
+
+    /* replaced text with icon in search bar*/
+
+    .t2 {
+        width: 100%;
+    }
+
+    .criteres {
+        justify-content: left;
+    }
+
+    /* Hebergement Zone start */
+
+    
 }
