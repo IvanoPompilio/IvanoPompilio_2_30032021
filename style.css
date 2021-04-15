@@ -262,7 +262,7 @@ nav li h2 a{
 }
 
 .sqhost img {
-    height: 130px;
+    height: 65%;
     width: 100%;
     object-fit: cover;
     border-radius: 13px 13px 0;
@@ -275,7 +275,7 @@ nav li h2 a{
     background-color: white;
     box-sizing: border-box;
     width: 100%;
-    height: 80px;
+    height: 42%;
     padding: 5px;
     line-height: 5px;
 }
@@ -288,6 +288,7 @@ nav li h2 a{
     font-size: 12px;
     color: #0065FC;
 }
+
 
 .sqhost:hover {
     color:#0065FC;
@@ -304,6 +305,10 @@ nav li h2 a{
 
 #hebergements h2 {
     margin: 10px 15px;
+}
+
+i.fas.fa-star.inact {
+    color: lightgrey;
 }
 /*---------------------------- end of hebergements ----------------------------*/
 
@@ -344,7 +349,7 @@ nav li h2 a{
 
 .hosting img {
     height: 100%;
-    width: 130px;
+    width: 50%;
     object-fit: cover;
     border-radius: 13px 0px 0px 13px;
 }
@@ -362,11 +367,15 @@ nav li h2 a{
     top: 0;
     background-color: white;
     box-sizing: border-box;
-    width: 210px;
+    width: 61%;
     height: 100%;
-    padding: 5px 18px 5px 18px;
+    padding: 0px 15px;
     font-size: 14px;
 
+}
+
+.rechost h2, .recthost p {
+    margin: 15px 0px;
 }
 
 .recthost i {
@@ -407,14 +416,13 @@ nav li h2 a{
 }
 
 .column2 div figcaption {
-    padding: 5px;
     position: absolute;
     bottom: 0;
     box-sizing: border-box;
     background-color: white;
     width: 100%;
     height: 60px;
-    padding: 5px 5px 5px 20px;
+    padding: 5px 20px;
     border-radius: 0px 0px 15px 15px;
 }
 
@@ -512,13 +520,19 @@ footer {
         margin-left: 0;
     }
 
+    .hosting {
+        min-width: 277px;
+        max-width: 380px;
+    }
+
     footer {
         justify-content: space-around;
         flex-wrap: wrap;
+        width: 100%;
     }
 
     .foot { 
-        width: auto!important;
+        width: auto;
 }
 
 }
@@ -527,6 +541,14 @@ footer {
 
 @media screen and (min-width: 667px) and (max-width: 768px) {
     
+    #populaires, #hebergements {
+        flex: 100%;
+
+    }
+
+    .hotels {
+        width: 100%;
+    }
     .heberg {
         flex-direction: row;
     }
@@ -534,6 +556,10 @@ footer {
     .column1 {
         justify-content: space-around;
         flex-wrap: wrap;
+    }
+
+    .sqhost {
+        min-width: 220px;
     }
 
     .containeract {
@@ -544,6 +570,10 @@ footer {
         flex: 50%;
         max-width: 50%;
     }
+
+    .foot {
+        margin: 0px 30px;
+    }
     
 
 }
@@ -551,6 +581,10 @@ footer {
 /*---------------------------- End of ipad and iphone in landscape orientation ----------------------------*/
 
 @media screen and (max-width: 666px) {
+
+    header {
+        display: none;
+    }
 
     .corp {
         margin: 0;
@@ -584,7 +618,150 @@ footer {
         justify-content: left;
     }
 
+    .filtres {
+        margin: 5px;
+    }
+
+    .filtres p {
+        margin: 18px;
+    }
+
     /* Hebergement Zone start */
 
+    p {
+        font-size: 14px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    h3, h4 {
+        font-size: 16px;
+    }
+
+    #hebergements{
+        order: 1;
+        background-color: #ffffff;
+    }
+
+    #hebergements, #populaires {
+        flex: 100%;
+        border-radius: 0px;
+        padding: 30px 20px;
+    }
     
+    #populaires {
+        margin-top: 20px !important;
+    }
+
+    #hebergements h2, #populaires h2{
+        margin: 18px 0px;
+    }
+
+    .heberg, .hostingsup {
+        width: 100%;
+        justify-content: center;
+        padding: 0;
+    }
+
+    .column1 {
+        justify-content: space-around;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    .sqhost, .hosting {
+        margin: 15px 0px;
+        width: 100% !important;
+        max-width: none;
+    }
+
+    .sqhost {
+        height: 180px;
+        font-size: 12px;
+    }
+
+    .sq {
+        height: auto;
+    }
+
+    .sq p{
+        font-size: 12px;
+    }
+
+    .hosting {
+        height: 130px;
+        min-width: 300px;
+    }
+
+    .recthost {
+        width: 180px;
+        font-size: 12px;
+    }
+
+    .recthost h3, .sqhost h3 {
+        font-size: 14px;
+    }
+
+    .recthost h3, .recthost p, .rating{
+        margin: 15px, 10px;
+    }
+
+    i.fas.fa-star {
+        font-size: 10px;
+        margin-top: 0px;
+    } 
+
+    /* Activité Zone start */
+
+    #activites {
+        padding: 20px;
+    }
+    #activites h2 {
+        margin: 20px;
+    }
+
+    .containeract {
+        flex-wrap: wrap;
+    }
+
+    .column2 {
+        flex: 100%;
+        max-width: 100%;
+        padding: 0;
+    }
+
+    .column2 div {
+        margin-bottom: 20px;
+    }
+
+    .activ {
+        height: 180px !important;
+        width: 100%;
+    }
+
+    .column2 div figcaption {
+        height: 50px;
+        padding: 0px, 5px !important;
+    }
+
+    figcaption h3 {
+        font-size: 14px;
+    }
+
+    /* footer */
+
+    footer {
+        flex-direction: column;
+        padding: 30px;
+    }
+
+    .foot ul li {
+        padding-bottom: 10px;
+        font-size: 14px;
+    }
+
+
+
 }
