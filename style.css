@@ -89,6 +89,10 @@ nav li h2 a{
 
 /*---------------------------- end of header ----------------------------*/
 
+#recherche {
+    width: 100%;
+}
+
 .soustitre h2, .soustitre p {
     margin: 10px;
 }
@@ -113,6 +117,7 @@ nav li h2 a{
 
 .spcrch {
     flex: 2;
+    max-width: 50%;
     background-color: white;
     border: none;
     font-size: 16px;
@@ -220,7 +225,7 @@ nav li h2 a{
 
 .hotels {
     display: flex;
-    width: auto;
+    width: 100%;
 }
 
 #hebergements {
@@ -591,7 +596,7 @@ footer {
     }
 
     #recherche {
-        margin: 0px 18px;
+        padding: 0px 18px;
     }
 
     .btn::before {
@@ -602,6 +607,10 @@ footer {
     
     .btn i {
         display: none;
+    }
+
+    .spcrch {
+        width: 50%;
     }
 
     .search {
@@ -620,10 +629,29 @@ footer {
 
     .filtres {
         margin: 5px;
+        height: 45px;
+
+    }
+
+    .filtres .fas {
+        height: 45px;
+        width: 45px;
     }
 
     .filtres p {
-        margin: 18px;
+        margin: 12px;
+        font-size: 12px;
+    }
+
+    p.info {
+        align-items: flex-start;
+    }
+
+    .fas.fa-info {
+        font-size: 10px;
+        width: 23px;
+        height: 20px;
+        margin: 0px 10px;
     }
 
     /* Hebergement Zone start */
@@ -648,7 +676,7 @@ footer {
     #hebergements, #populaires {
         flex: 100%;
         border-radius: 0px;
-        padding: 30px 20px;
+        padding: 30px 15px;
     }
     
     #populaires {
@@ -656,7 +684,7 @@ footer {
     }
 
     #hebergements h2, #populaires h2{
-        margin: 18px 0px;
+        margin: 15px 0px;
     }
 
     .heberg, .hostingsup {
@@ -672,13 +700,13 @@ footer {
     }
 
     .sqhost, .hosting {
-        margin: 15px 0px;
+        margin: 5px 0px;
         width: 100% !important;
         max-width: none;
     }
 
     .sqhost {
-        height: 180px;
+        height: 175px;
         font-size: 12px;
     }
 
@@ -716,7 +744,7 @@ footer {
     /* Activité Zone start */
 
     #activites {
-        padding: 20px;
+        padding: 20px 15px;
     }
     #activites h2 {
         margin: 20px;
@@ -737,7 +765,7 @@ footer {
     }
 
     .activ {
-        height: 180px !important;
+        height: 170px !important;
         width: 100%;
     }
 
@@ -762,6 +790,8 @@ footer {
         font-size: 14px;
     }
 
-
+    /*problem with iphone 5 size: something wrong with width. However the mockup width is set on iphone 5 size, 
+    but mentor said to keep iphone 8 as reference. Ask for more infos at next meeting.*/
+    
 
 }
