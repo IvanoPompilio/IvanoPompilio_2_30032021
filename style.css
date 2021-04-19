@@ -47,6 +47,10 @@ header{
     margin: 10px 50px 0px 50px;
 }
 
+.logo { 
+    flex-grow: 1;
+}
+
 nav {
     display: flex;
     flex-wrap: wrap;
@@ -87,7 +91,7 @@ nav li h2 a{
 
 }
 
-/*---------------------------- end of header ----------------------------*/
+/*---------------------------- search zone ----------------------------*/
 
 #recherche {
     width: 100%;
@@ -145,7 +149,7 @@ nav li h2 a{
 .btn i{
     font-style: normal;
 }
-/*---------------------------- END OF search bar ----------------------------*/
+/*---------------------------- Filters zone ----------------------------*/
 
 .criteres {
     display: flex;
@@ -221,7 +225,7 @@ nav li h2 a{
     margin: 10px;
 }
 
-/*---------------------------- end of search zone ----------------------------*/
+/*---------------------------- Hebergements zone ----------------------------*/
 
 .hotels {
     display: flex;
@@ -315,7 +319,7 @@ nav li h2 a{
 i.fas.fa-star.inact {
     color: lightgrey;
 }
-/*---------------------------- end of hebergements ----------------------------*/
+/*---------------------------- Populaires zone ----------------------------*/
 
 #populaires {
     display: block;
@@ -390,7 +394,7 @@ i.fas.fa-star.inact {
         margin-top: 15px;
 }
 
-/*---------------------------- end of Populaires ----------------------------*/
+/*---------------------------- Activites area ----------------------------*/
 
 #activites {
     height: auto;
@@ -475,7 +479,7 @@ i.fas.fa-star.inact {
     height: 240px;
 }
 
-/*---------------------------- end of activités ----------------------------*/
+/*---------------------------- Footer ----------------------------*/
 
 footer {
     display: flex;
@@ -502,9 +506,9 @@ footer {
     padding-bottom: 20px;
 }
 
-/*---------------------------- end of desktop version ----------------------------*/
+/*---------------------------- Small desktop ----------------------------*/
 
-@media (max-width: 1400px) {
+@media (max-width: 1365px) {
 
     .criteres {
         justify-content: space-around;
@@ -543,7 +547,7 @@ footer {
 
 }
 
-/*---------------------------- End of small desktop ----------------------------*/
+/*---------------------------- Mobile and ipad in landscape  ----------------------------*/
 
 @media screen and (min-width: 667px) and (max-width: 768px) {
     
@@ -584,7 +588,7 @@ footer {
 
 }
 
-/*---------------------------- End of ipad and iphone in landscape orientation ----------------------------*/
+/*---------------------------- Mobile version ----------------------------*/
 
 @media screen and (max-width: 666px) {
 
@@ -596,15 +600,13 @@ footer {
         padding: 0px 30px;
     }
 
-
     nav ul {
             flex: 100%;
             order: 1;
-            margin: 0px 0px 30px 0px;
             justify-content: space-between;
-            margin: 0px 30px;
-            padding: 0px 0px 15px 0px;
+            padding-bottom: 15px;
             border-bottom: 2px lightgray solid;
+            
         }
     
     nav ul li {
