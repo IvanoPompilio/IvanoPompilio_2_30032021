@@ -44,21 +44,21 @@ a:hover {
 /*---------------------------- header beginning ----------------------------*/
 
 header{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     margin: 10px 50px 0px 50px;
 }
 
 nav {
     display: flex;
-    align-items: baseline;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
 }
 
 
 nav ul{
     display: flex;
     list-style-type: none;
+    align-content: flex-end;
 }
 
 nav li a, .inscription{ 
@@ -73,7 +73,7 @@ nav li a, .inscription{
 header nav li a:hover{
     box-sizing: border-box;
     border-top: 2px #0065FC solid;
-    padding-top: 50px;
+    padding-top: 48px;
 }
 
 nav li h2 a{
@@ -345,6 +345,7 @@ i.fas.fa-star.inact {
     box-sizing: border-box;
     height: 145px;
     min-width: 335px;
+    max-width: 380px ;
     border: 5px white solid;
     border-radius: 15px;
     margin: 15px;
@@ -588,9 +589,38 @@ footer {
 @media screen and (max-width: 666px) {
 
     header {
-        display: none;
+        margin: 0px !important;
     }
 
+    .logo, .inscription {
+        padding: 0px 30px;
+    }
+
+
+    nav ul {
+            flex: 100%;
+            order: 1;
+            margin: 0px 0px 30px 0px;
+            justify-content: space-between;
+            margin: 0px 30px;
+            padding: 0px 0px 15px 0px;
+            border-bottom: 2px lightgray solid;
+        }
+    
+    nav ul li {
+        width: 50%;
+    }
+
+    nav li h2 {
+        margin: 0px;
+    }
+    
+    header nav li a:hover{
+        border-top: none;
+        border-bottom: 2px #0065FC solid;
+        padding-bottom: 15px;
+    }
+    
     .corp {
         margin: 0;
     }
@@ -611,6 +641,9 @@ footer {
 
     .spcrch {
         width: 50%;
+        font-size: 14px;
+        text-align: center;
+        padding: 0px;
     }
 
     .search {
@@ -789,9 +822,5 @@ footer {
         padding-bottom: 10px;
         font-size: 14px;
     }
-
-    /*problem with iphone 5 size: something wrong with width. However the mockup width is set on iphone 5 size, 
-    but mentor said to keep iphone 8 as reference. Ask for more infos at next meeting.*/
-    
 
 }
