@@ -121,20 +121,24 @@ nav li h2 a{
 
 .spcrch {
     flex: 2;
-    max-width: 50%;
     background-color: white;
     border: none;
     font-size: 16px;
     font-weight: 600;
+    text-align: left;
+    color: black !important;
+    padding: 16px;
+}
+
+.spcrch::placeholder {
     color: black;
-    padding: 18px;
 }
 
 .btn {
-    padding: 18px;
+    padding: 16px;
     background-color: #0065FC;
     border-radius: 0px 15px 15px 0px;
-    font-weight: 600;
+    font-weight: 500;
     letter-spacing: 0.5px;
     color: white;
     transition: 0.5s;
@@ -348,7 +352,7 @@ i.fas.fa-star.inact {
     position: relative;
     box-sizing: border-box;
     height: 145px;
-    min-width: 335px;
+    min-width: 280px;
     max-width: 380px ;
     border: 5px white solid;
     border-radius: 15px;
@@ -384,14 +388,14 @@ i.fas.fa-star.inact {
 
 }
 
-.rechost h2, .recthost p {
-    margin: 15px 0px;
+.recthost h3, .recthost p {
+    margin: 12px 0px 0px 0px;
 }
 
 .recthost i {
-        font-size: 12px;
+        font-size: 11px;
         color: #0065FC;
-        margin-top: 15px;
+        margin-top: 40px;
 }
 
 /*---------------------------- Activites area ----------------------------*/
@@ -553,7 +557,10 @@ footer {
     
     #populaires, #hebergements {
         flex: 100%;
+    }
 
+    .spcrch {
+        max-width: 50%;
     }
 
     .hotels {
@@ -606,7 +613,7 @@ footer {
             justify-content: space-between;
             padding-bottom: 15px;
             border-bottom: 2px lightgray solid;
-            
+
         }
     
     nav ul li {
@@ -635,6 +642,7 @@ footer {
         font-family: "Font Awesome 5 Free";
         content: "\f002";
         display: inline-block;
+        font-weight: 600;
     }
     
     .btn i {
@@ -644,8 +652,8 @@ footer {
     .spcrch {
         width: 50%;
         font-size: 14px;
-        text-align: center;
-        padding: 0px;
+        text-align: left;
+        padding: 0px 0px 0px 10px;
     }
 
     .search {
@@ -755,7 +763,7 @@ footer {
 
     .hosting {
         height: 130px;
-        min-width: 300px;
+        min-width: 280px;
     }
 
     .recthost {
