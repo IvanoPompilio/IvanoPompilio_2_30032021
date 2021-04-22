@@ -682,8 +682,8 @@ footer {
     }
 
     .filtres p {
-        margin: 12px;
-        font-size: 12px;
+        margin: 7px;
+        font-size: 14px;
     }
 
     p.info {
@@ -757,7 +757,7 @@ footer {
         height: auto;
     }
 
-    .sq p{
+    .sq p, .recthost p{
         font-size: 12px;
     }
 
@@ -768,7 +768,6 @@ footer {
 
     .recthost {
         width: 180px;
-        font-size: 12px;
     }
 
     .recthost h3, .sqhost h3 {
@@ -781,7 +780,10 @@ footer {
 
     i.fas.fa-star {
         font-size: 10px;
-        margin-top: 0px;
+    } 
+
+    .recthost i.fas.fa-star {
+        margin-top: 30px;
     } 
 
     /* Activité Zone start */
