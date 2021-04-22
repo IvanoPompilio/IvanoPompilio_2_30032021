@@ -266,7 +266,6 @@ nav li h2 a{
     height: 200px;
     flex: 33%;
     max-width: 300px;
-    min-width: 240px;
     border: 5px white solid;
     border-radius: 15px;
     margin: 15px;
@@ -407,13 +406,12 @@ i.fas.fa-star.inact {
 
 .containeract {
     display: flex;
-
+    justify-content: space-between;
 }
 
 .column2 {
     flex: 25%;
-    max-width: 25%;
-    padding: 0 20px;
+    max-width: 24%;
 }
 
 
@@ -553,7 +551,7 @@ footer {
 
 /*---------------------------- Mobile and ipad in landscape  ----------------------------*/
 
-@media screen and (min-width: 667px) and (max-width: 768px) {
+@media screen and (min-width: 666px) and (max-width: 768px) {
     
     #populaires, #hebergements {
         flex: 100%;
@@ -566,6 +564,7 @@ footer {
     .hotels {
         width: 100%;
     }
+
     .heberg {
         flex-direction: row;
     }
@@ -577,6 +576,11 @@ footer {
 
     .sqhost {
         min-width: 220px;
+        max-width: 355px;
+    }
+
+    .hosting{
+        max-width: 355px;
     }
 
     .containeract {
@@ -585,7 +589,7 @@ footer {
 
     .column2 {
         flex: 50%;
-        max-width: 50%;
+        max-width: 49%;
     }
 
     .foot {
@@ -595,9 +599,54 @@ footer {
 
 }
 
+/*---------------------------- Iphone 5 in landscape  ----------------------------*/
+
+@media screen and (max-width: 666px){
+
+    nav ul {
+        padding: 0;
+    }
+
+    .inscription {
+        padding-right: 0;
+    }
+
+    .heberg {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .column1 {
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+
+    .sqhost {
+        min-width: 300px;
+        max-width: 355px;
+    }
+
+    .hosting{
+        max-width: 355px;
+    }
+
+    .containeract {
+        flex-wrap: wrap;
+    }
+
+    .column2 {
+        flex: 50%;
+        max-width: 49%;
+    }
+
+    .foot {
+        margin: 0px 30px;
+    }
+}
+
 /*---------------------------- Mobile version ----------------------------*/
 
-@media screen and (max-width: 666px) {
+@media screen and (max-width: 567px) {
 
     header {
         margin: 0px !important;
@@ -611,23 +660,33 @@ footer {
             flex: 100%;
             order: 1;
             justify-content: space-between;
-            padding-bottom: 15px;
-            border-bottom: 2px lightgray solid;
-
+            padding: 0;
+            margin: 0;
+            text-align: center;
         }
-    
-    nav ul li {
-        width: 50%;
+
+    nav ul li:hover {
+        border-bottom: 2px #0065FC solid;
+        padding-bottom: 15px;
     }
 
-    nav li h2 {
+    nav ul li {
+        width: 50%;
+        padding-bottom: 15px;
+        border-bottom: 2px lightgray solid;
+    }
+
+    nav ul li h2 {
+        margin: 0;
+    }
+
+    nav li h2 a{
         margin: 0px;
     }
     
     header nav li a:hover{
         border-top: none;
-        border-bottom: 2px #0065FC solid;
-        padding-bottom: 15px;
+        padding-top: 0;
     }
     
     .corp {
@@ -750,6 +809,7 @@ footer {
 
     .sqhost {
         height: 175px;
+        min-width: 240px;
         font-size: 12px;
     }
 
