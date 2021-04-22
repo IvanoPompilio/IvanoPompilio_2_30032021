@@ -246,7 +246,7 @@ nav li h2 a{
     height: auto;
     background-color:#F2F2F2;
     border-radius: 15px;
-    margin-right: 40px;
+    margin: 0 40px 40px 0; 
 }
 
 .heberg {
@@ -335,6 +335,7 @@ i.fas.fa-star.inact {
     background-color:#F2F2F2;
     border-radius: 15px;
     padding: 30px 25px 30px 25px;
+    margin: 0 0 40px 0; 
 }
 
 #populaires h2{
@@ -403,7 +404,6 @@ i.fas.fa-star.inact {
 
 #activites {
     height: auto;
-    padding: 45px 0px 0px 0px;
 }
 
 .containeract {
@@ -805,7 +805,6 @@ footer {
     .sqhost, .hosting {
         margin: 5px 0px;
         width: 100% !important;
-        max-width: none;
     }
 
     .sqhost {
@@ -825,6 +824,7 @@ footer {
     .hosting {
         height: 130px;
         min-width: 280px;
+        max-width: 350px;
     }
 
     .recthost {
