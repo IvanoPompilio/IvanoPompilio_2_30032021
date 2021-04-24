@@ -413,7 +413,7 @@ i.fas.fa-star.inact {
 
 .column2 {
     flex: 25%;
-    max-width: 24%;
+    max-width: 23%;
 }
 
 
@@ -590,7 +590,7 @@ footer {
 
     .column2 {
         flex: 50%;
-        max-width: 49%;
+        max-width: 47%;
     }
 
     .foot {
