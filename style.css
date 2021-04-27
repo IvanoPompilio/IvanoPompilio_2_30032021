@@ -424,7 +424,7 @@ i.fas.fa-star.inact {
 .column2 .cart {
     position: relative;
     border-radius: 15px;
-    margin-bottom: 40px;
+    margin-bottom: 36px;
     box-shadow: 0px 0px 14px rgba(0, 0, 0, 0.219);
     transition: 0.5s;
 }
